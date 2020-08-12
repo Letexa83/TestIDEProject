@@ -8,6 +8,9 @@ public class Programm {
         System.out.println(book);
         Book namedBook = new NamedBook("Артур Конан-Дойль", "Этюд в багровых тонах");
         System.out.println(namedBook);
+        Book newNamedBook = new NamedBook("Agata Kristy", "10 negers");
+        System.out.println(newNamedBook);
+
 
     }
 }
