@@ -10,6 +10,7 @@ public class Programm {
         System.out.println(namedBook);
         Book newNamedBook = new NamedBook("Agata Kristy", "10 negers");
         System.out.println(newNamedBook);
+        System.out.println(newNamedBook);
 
 
     }
