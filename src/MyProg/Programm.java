@@ -1,4 +1,7 @@
 package MyProg;
+import  MyProg.SubClasses.Test;
+
+import java.time.Instant;
 
 public class Programm {
     public static void main(String[] args) {
@@ -10,9 +13,16 @@ public class Programm {
         System.out.println(namedBook);
         Book newNamedBook = new NamedBook("Agata Kristy", "10 negers");
         System.out.println(newNamedBook);
-
-
-
+        Test.println(newNamedBook);
+        Test tst = null;
+        try {
+            tst = Test.class.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        System.out.println(tst);
     }
 }
 
